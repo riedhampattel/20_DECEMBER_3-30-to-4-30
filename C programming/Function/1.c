@@ -1,6 +1,6 @@
 //1.with return type with argument
 #include<stdio.h>
-int add(int num1,int num2);//declaration
+int add(int num1,int num2);//declaration of the function
 int main()
 {
 	int n1,n2;
@@ -12,7 +12,7 @@ int main()
 	printf("The addition is = %d",result);
 	return 0;
 }
-int add(int num1,int num2)
+int add(int num1,int num2)//definition of the function
 {
 	int ans;
 	ans = num1 + num2;
