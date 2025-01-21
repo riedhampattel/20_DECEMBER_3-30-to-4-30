@@ -1,6 +1,5 @@
 #include<stdio.h>
-int size = 3;
-int left(int arr[size][size],int size)
+int left(int arr[][10],int size)
 {
 	int i,j,sum=0;
 	for(i=0;i<size;i++)
@@ -15,7 +14,7 @@ int left(int arr[size][size],int size)
 	}
 	return sum;
 }
-int right(int arr[size][size],int size)
+int right(int arr[][10],int size)
 {
 	int j=size-1,sum = 0,i;
 	for(i=0;i<size;i++)
@@ -27,7 +26,9 @@ int right(int arr[size][size],int size)
 }
 int main()
 {
-	int a[10][10],i,j;
+	int a[10][10],i,j,size;
+	printf("\nEnter the size of an array = ");
+	scanf("%d",&size);
 	for(i=0;i<size;i++)
 	{
 		for(j=0;j<size;j++)
