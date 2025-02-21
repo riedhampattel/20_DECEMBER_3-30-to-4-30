@@ -1,0 +1,37 @@
+Write a c++ program to make unit converter using switch case including
+km ---> m
+m ---> km
+kg ---> g
+hr ---> min
+min ---> sec
+
+Write a c++ program to print all the missing numbers among all the 10 numbers entered by the user (*prompt user to enter any 10 numbers between 1 - 50)
+
+Write a c++ program to print the following pattern
+a
+a b
+a b c
+a b c d
+a b c d e
+
+Write a c++ program to print the following pattern
+!
+! @
+! @ !
+! @ ! @
+! @ ! @ !
+
+Write a c++ program to print factorial using recurion
+
+Write a c++ program to take a character from the user and print it's deciamal and binary equivalent
+
+Write a C++ program to find the largest element of a given array of integers.
+
+Write code to create a checkerboard pattern with the words "black" and "white".
+Sample Output:
+Input number of rows: 5
+black-white-black-white-black
+white-black-white-black-white
+black-white-black-white-black
+white-black-white-black-white
+black-white-black-white-black
