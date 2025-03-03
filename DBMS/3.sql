@@ -51,3 +51,45 @@ select * from employees order by 2;
 select employee_id,first_name,salary as income from employees order by income;
 
 select employee_id,first_name,salary as income from employees;
+
+select distinct department_id from employees;
+
+select * from employees;
+
+select * from employees where commission_pct is not null;
+
+select * from employees where commission_pct is null;
+
+select * from employees where first_name like 'S%';
+
+select * from employees where first_name like '%ee%';
+
+select * from employees where first_name like '%e%e%';
+
+select * from employees where first_name like '%e_';
+
+select * from employees where hire_date like '%-JU_-%';
+
+select * from employees where hire_date like '%-J_N-%';
+
+select max(salary) from employees;
+
+select min(salary) from employees;
+
+select sum(salary) from employees;
+
+select avg(salary) from employees;
+
+select count(commission_pct) from employees;
+
+select department_id,max(salary) from employees group by department_id having max(salary)>10000;
+
+select department_id,count(*) from employees where salary>10000 group by department_id order by 2;
+
+select * from employees order by salary desc;
+
+select * from employees order by salary desc limit 5;
+
+select * from employees order by salary limit 5;
+
+select * from employees order by salary desc limit 10 offset 5;
