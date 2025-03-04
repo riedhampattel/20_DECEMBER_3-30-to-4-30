@@ -97,3 +97,7 @@ select * from employees order by salary desc limit 10 offset 5;
 select first_name,last_name,salary from employees where salary=(select max(salary) from employees);
 
 select first_name,last_name,salary from employees where salary=(select min(salary) from employees) or salary=(select max(salary) from employees);
+
+select first_name,last_name from employees;
+
+select concat(first_name,' ',last_name) as full_name from employees;
