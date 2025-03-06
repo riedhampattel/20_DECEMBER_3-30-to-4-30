@@ -101,3 +101,17 @@ select first_name,last_name,salary from employees where salary=(select min(salar
 select first_name,last_name from employees;
 
 select concat(first_name,' ',last_name) as full_name from employees;
+
+select concat(last_name,"'s monthly salary is ",salary) from employees;
+
+select * from employees where manager_id not in (124,149,100);
+
+select count(hire_date) from employees where hire_date between '1991-01-01' and '1995-12-31';
+
+select count(distinct manager_id) from employees;
+
+select * from employees;
+
+select count(last_name) from employees where last_name like 'Z%' or last_name like '%z';
+
+select last_name from employees where last_name like 'Z%' or last_name like '%z';
