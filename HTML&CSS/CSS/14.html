@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+    *
+    {
+        background-color: black;
+    }
+    p
+    {
+        border: 5px solid brown;
+        text-align: center;
+        margin: 5rem 5rem;
+        padding: 2rem 4rem;
+        font-size: 20px;
+        text-shadow: 1px 1px 10px rgb(241, 50, 82);
+        font-family: "Pacifico", cursive;
+        box-shadow: 5px 5px 1px white;
+        color: aliceblue;   
+        border-radius: 30px;
+        animation: 0.5s change infinite;
+    }
+    @keyframes change
+    {
+        0%,50%
+        {
+            background :linear-gradient(45deg,rgb(9, 50, 234),rgb(13, 178, 13));
+        }
+        50%,100%
+        {
+            background :linear-gradient(45deg,rgb(13, 178, 13),rgb(9, 50, 234));
+        }
+    }
+    @media (max-width : 430px)
+    {
+       *
+       {
+        background-color: white;
+       } 
+       p
+        {
+        margin: 4rem 2rem;
+        padding: 2rem 2rem;
+        box-shadow: 5px 5px 1px black;
+        color: black;   
+        animation: 2s change infinite;
+    }
+    @keyframes change
+    {
+        0%,25%
+        {
+            background :linear-gradient(45deg,orange,white);
+        }
+        26%,50%
+        {
+            background :linear-gradient(45deg,white,orange);
+        }
+        51%,75%
+        {
+            background :linear-gradient(45deg,green,white);
+        }
+        76%,100%
+        {
+            background :linear-gradient(45deg,white,green);
+        }
+    }
+    }
+</style>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam voluptatum nihil perspiciatis reiciendis ipsa. Deserunt tempore a inventore ullam vel, officia maiores est excepturi magnam nemo quidem laudantium similique. Animi repellendus sed deleniti earum reprehenderit, quo impedit pariatur quis porro tenetur sint totam eos quia consequuntur voluptatum aspernatur debitis, maxime deserunt. Alias distinctio deserunt cum. Laborum quisquam ad illum similique inventore, qui nesciunt explicabo eaque sequi, tempore nisi blanditiis neque dicta pariatur, ab quam aliquid quasi. Rem, hic fugit cupiditate numquam vitae porro adipisci vero eos ab suscipit temporibus veritatis. Reprehenderit repudiandae aliquam, amet perspiciatis, velit dolorum at in itaque quos nemo modi incidunt consequuntur ratione perferendis facilis sequi quia consectetur, aut corporis? Minus reiciendis iusto perferendis libero eveniet aspernatur esse deserunt ea ullam modi? Voluptates atque voluptas laborum aliquid inventore quasi, ducimus fugit repudiandae commodi dolore beatae? Impedit deleniti in consequuntur, laborum vel quas sed officia eligendi a repellat.</p>
+    </div>
+</body>
+</html>
